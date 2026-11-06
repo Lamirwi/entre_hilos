@@ -1,0 +1,17 @@
+Paso 1. Crear la carpeta
+Paso 2. Crear los archivos
+Dentro de Visual Studio Code, crea estos dos archivos:
+- index.html
+- estilo.css
+Paso 3. Pensar contenido y estructura del blog y organizar ideas
+Paso 4. Definir etiquetas importantes 
+Etiqueta	Función
+header	Cabecera de la página
+nav	Menú de navegación
+main	Contenido principal
+section	Agrupa contenidos
+article	Representa una publicación
+h1, h2, h3	Títulos y subtítulos
+p	Párrafos
+a	Enlaces
+footer	Pie de página
