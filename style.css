@@ -1,0 +1,315 @@
+/* ESTILOS GENERALES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: #faf6ef;
+    color: #514438;
+    line-height: 1.7;
+}
+
+
+/* CABECERA */
+
+header {
+    background-color: #ead9c9;
+    padding: 5px 8%;
+    border-bottom: 1px solid #ddc5b2;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+/* COLUMNA IZQUIERDA */
+
+.titulo-blog {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.titulo-blog img {
+    width: 175px;
+    height: 175px;
+    object-fit: contain;
+}
+
+.texto-cabecera {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texto-cabecera h1 {
+    font-size: 78px;
+    color: #644032;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: "Cookie", cursive;
+    line-height: 0.9;
+    margin: 0;
+}
+
+.texto-cabecera p {
+    color: #644032;
+    font-size: 25px;
+    font-family: "Cookie", cursive;
+    font-style: normal;
+    line-height: 1;
+    margin: 0;
+}
+
+.botones {
+    display: inline-block;
+    background-color: #b77965;
+    color: white;
+    text-decoration: none;
+    padding: 9px 20px;
+    border-radius: 20px;    
+    transition: background-color 0.3s;
+}
+
+/* COLUMNA DERECHA: NAVEGACIÓN */
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #654d3c;
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    background-color: #b77965;
+    color: white;
+}
+
+
+/* PRESENTACION */
+.presentacion {
+    background:      
+        url("images/presentacion.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-align: left;
+    padding: 65px clamp(30px, 4vw, 60px);
+    min-height: 280px;
+    
+    box-shadow: 0 4px 15px rgba(80, 60, 40, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* TITULO DE PRESENTACION */
+
+.presentacion h2 {
+    font-size: 48px;
+    color: #644032;
+    margin-bottom: 15px;
+    text-align: left;
+    padding-left: 6;
+}
+
+/* TEXTO DE PRESENTACION */
+
+.presentacion p {
+    font-size: 22px;
+    line-height: 1.8;
+   color: #644032;
+    max-width: 600px;
+    margin: 0;
+    text-align: left;
+    padding-left: 60px;
+}
+
+/* PUBLICACIONES */
+
+#tutoriales {
+    text-align: center;
+}
+
+#tutoriales > h2 {
+    margin-bottom: 30px;
+}
+
+#tutoriales article {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin: 1%;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(80, 60, 40, 0.10);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#tutoriales article:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 22px rgba(80, 60, 40, 0.16);
+}
+
+#tutoriales article h3 {
+    color: #a2745c;
+    margin-bottom: 12px;
+    font-size: 19px;
+}
+
+#tutoriales article p {
+    font-size: 15px;
+}
+
+
+/* INSPIRACION Y SOBRE MI */
+
+#inspiracion,
+#sobre-mi {
+    text-align: center;
+    padding: 25px;
+}
+
+/* PIE DE PAGINA */
+
+footer {
+    background-color: #e9d9c8;
+    text-align: center;
+    padding: 22px;
+    color: #705744;
+}
+
+
+/* DISEÑO RESPONSIVE */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 34px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        margin: 3px;
+        padding: 7px 12px;
+        font-size: 14px;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+
+    .presentacion {
+        padding: 45px 20px;
+    }
+
+    .presentacion h2 {
+        font-size: 27px;
+    }
+
+    #tutoriales article {
+        display: block;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    article img {
+        height: 210px;
+    }
+
+    section {
+        margin-bottom: 35px;
+    }
+}
+
+
+
+/* IMAGENES DE LAS PUBLICACIONES */
+
+article img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+
+
+.botones:hover {
+    background-color: #805c49;
+}
+
+
+/* IMAGENES DE LOS ARTICULOS */
+
+.imagen-articulo {
+    width: 100%;
+    max-width: 750px;
+    max-height: 420px;
+    object-fit: cover;
+    display: block;
+    margin: 25px auto;
+    border-radius: 12px;
+}
+
+main ul {
+    margin: 15px 0 25px 35px;
+}
+
+main li {
+    margin-bottom: 8px;
+}
+
+main h3 {
+    color: #a2745c;
+    margin: 25px 0 10px;
+}
+
+
+/* DETALLES DE LAS SECCIONES */
+
+#inspiracion,
+#sobre-mi {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 25px;
+    text-align: center;
+}
+
+#sobre-mi p {
+    margin-bottom: 12px;
+}
+
+#inspiracion {
+    background-color: #efe4d7;
+    border-radius: 12px;
+}
+
+
