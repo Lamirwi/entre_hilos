@@ -280,6 +280,7 @@ footer img {
 
     section {
         margin-bottom: 35px;
+         text-align: center;   
     }
     .inspiracionEinfo {
     flex-direction: column;
@@ -357,3 +358,85 @@ main h3 {
 }
 
 
+
+
+/* CONTENIDO DE LOS ARTICULOS */
+
+.contenido-articulo {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 35px 50px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(80, 60, 40, 0.08);
+}
+
+/* TITULO DEL ARTICULO */
+
+.contenido-articulo h2 {
+    text-align: center;
+    color: #644032;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+/* TEXTO */
+
+.contenido-articulo p {
+    text-align: justify;
+    margin-bottom: 15px;
+    color: #514438;
+}
+
+/* SUBTITULOS */
+
+.contenido-articulo h3 {
+    color: #a2745c;
+    margin: 25px 0 10px;
+}
+
+/* LISTAS */
+
+.contenido-articulo ul {
+    margin: 15px 0 25px 35px;
+}
+
+/* IMAGEN */
+
+.imagen-articulo {
+    width: 100%;
+    max-width: 650px;
+    max-height: 380px;
+    object-fit: cover;
+    display: block;
+    margin: 25px auto;
+    border-radius: 12px;
+}
+
+/* BOTONERA */
+
+.navegacion-articulo {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 25px auto 40px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+
+    .contenido-articulo {
+        margin: 20px 15px;
+        padding: 25px 20px;
+    }
+
+    .contenido-articulo h2 {
+        font-size: 26px;
+    }
+
+    .imagen-articulo {
+        max-height: 280px;
+    }
+
+}

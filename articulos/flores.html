@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -13,9 +14,11 @@
 
     <header>
         <div class="cabecera">
+
             <!-- Columna izquierda: logo y descripción -->
             <div class="titulo-blog">
                 <img src="../images/iconoCorazonGanchillo.png" alt="Corazón de ganchillo">
+
                 <div class="texto-cabecera">
                     <h1>Entre Hilos</h1>
                     <p>Un mundo de creatividad tejido a mano</p>
@@ -24,10 +27,10 @@
 
             <!-- Columna derecha: navegación -->
             <nav>
-                <a class="botones" href="index.html">Inicio</a>
-                <a class="botones" href="#publicaciones">Publicaciones</a>
-                <a class="botones" href="#inspiracion">Inspiración</a>
-                <a class="botones" href="#sobre-mi">Sobre mí</a>
+                <a class="botones" href="../index.html">Inicio</a>
+                <a class="botones" href="../index.html#publicaciones">Publicaciones</a>
+                <a class="botones" href="../index.html#inspiracion">Inspiración</a>
+                <a class="botones" href="../index.html#sobre-mi">Sobre mí</a>
             </nav>
 
         </div>
@@ -35,11 +38,14 @@
 
     <main>
 
-        <section>
+        <!-- CONTENIDO DEL ARTÍCULO -->
+        <section class="contenido-articulo">
+
             <h2>Flores hechas a crochet</h2>
 
-            <img class="imagen-articulo" src="../images/flores.png"
-                alt="Flores de diferentes colores tejidas a crochet">
+            <img class="imagen-articulo"
+                 src="../images/flores.png"
+                 alt="Flores de diferentes colores tejidas a crochet">
 
             <p>
                 Las flores a crochet son pequeñas creaciones
@@ -82,16 +88,24 @@
                 hechos completamente a mano.
             </p>
 
-            <a class="leer-mas" href="../index.html">
+        </section>
+
+        <!-- BOTONERA INDEPENDIENTE -->
+        <nav class="navegacion-articulo">
+
+            <a class="botones" href="../index.html">
                 Volver al inicio
             </a>
 
-        </section>
+        </nav>
 
     </main>
 
     <footer>
-        <p>© 2026 Entre Hilos - Blog de Crochet</p>
+        <div class="contenido-footer">
+            <p>© 2026 Entre Hilos - Blog de Crochet</p>
+            <img src="../images/tejer.png" alt="Icono ovillo de tejer">
+        </div>
     </footer>
 
 </body>
