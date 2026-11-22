@@ -1,4 +1,7 @@
-/* ESTILOS GENERALES */
+```css
+/* ==================================================
+   ESTILOS GENERALES
+================================================== */
 
 * {
     margin: 0;
@@ -14,14 +17,15 @@ body {
 }
 
 
-/* CABECERA */
+/* ==================================================
+   CABECERA
+================================================== */
 
 header {
     background-color: #ead9c9;
     padding: 5px 8%;
     border-bottom: 1px solid #ddc5b2;
 }
-
 
 .cabecera {
     display: flex;
@@ -69,17 +73,6 @@ header {
     margin: 0;
 }
 
-.botones {
-    display: inline-block;
-    background-color: #b77965;
-    color: white;
-    text-decoration: none;
-    padding: 5px 20px;
-    border-radius: 20px;    
-    transition: background-color 0.3s;
-    margin-top: 10px;;
-}
-
 /* COLUMNA DERECHA: NAVEGACIÓN */
 
 nav {
@@ -107,11 +100,32 @@ nav a:hover {
 }
 
 
-/* PRESENTACION */
-.presentacion {
-    background:      
-        url("images/presentacion.jpeg");
+/* ==================================================
+   BOTONES
+================================================== */
 
+.botones {
+    display: inline-block;
+    background-color: #b77965;
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.botones:hover {
+    background-color: #805c49;
+}
+
+
+/* ==================================================
+   PRESENTACIÓN
+================================================== */
+
+.presentacion {
+    background-image: url("images/presentacion.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -119,7 +133,7 @@ nav a:hover {
     text-align: left;
     padding: 65px clamp(30px, 4vw, 60px);
     min-height: 280px;
-    
+
     box-shadow: 0 4px 15px rgba(80, 60, 40, 0.08);
 
     display: flex;
@@ -127,32 +141,35 @@ nav a:hover {
     justify-content: center;
 }
 
-/* TITULO DE PRESENTACION */
+/* TÍTULO DE PRESENTACIÓN */
 
 .presentacion h2 {
     font-size: 48px;
     color: #644032;
     margin-bottom: 15px;
     text-align: left;
-    padding-left: 6;
+    padding-left: 6px;
 }
 
-/* TEXTO DE PRESENTACION */
+/* TEXTO DE PRESENTACIÓN */
 
 .presentacion p {
     font-size: 22px;
     line-height: 1.8;
-   color: #644032;
+    color: #644032;
     max-width: 600px;
     margin: 0;
     text-align: left;
     padding-left: 60px;
 }
 
-/* PUBLICACIONES */
+
+/* ==================================================
+   PUBLICACIONES
+================================================== */
 
 #publicaciones {
-    text-align: center;    
+    text-align: center;
 }
 
 #publicaciones > h2 {
@@ -178,7 +195,6 @@ nav a:hover {
 }
 
 #publicaciones article h3 {
-    
     margin-bottom: 12px;
     font-size: 19px;
     color: #644032;
@@ -190,7 +206,33 @@ nav a:hover {
 }
 
 
-/* INSPIRACION Y SOBRE MI */
+/* ==================================================
+   IMÁGENES DE PUBLICACIONES
+================================================== */
+
+article img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+
+/* ==================================================
+   INSPIRACIÓN Y SOBRE MÍ
+================================================== */
+
+.inspiracionEinfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
 
 .inspiracionEinfo > div,
 .inspiracionEinfo > section {
@@ -200,7 +242,6 @@ nav a:hover {
 
 #inspiracion,
 #sobre-mi {
-    max-width: none;
     margin: 0;
     padding: 30px;
     text-align: center;
@@ -215,7 +256,89 @@ nav a:hover {
     object-fit: contain;
 }
 
-/* PIE DE PAGINA */
+
+/* ==================================================
+   CONTENIDO DE LOS ARTÍCULOS
+================================================== */
+
+.contenido-articulo {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 35px 50px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(80, 60, 40, 0.08);
+}
+
+/* TÍTULO DEL ARTÍCULO */
+
+.contenido-articulo h2 {
+    text-align: center;
+    color: #644032;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+/* TEXTO */
+
+.contenido-articulo p {
+    text-align: justify;
+    margin-bottom: 15px;
+    color: #514438;
+}
+
+/* SUBTÍTULOS */
+
+.contenido-articulo h3 {
+    color: #a2745c;
+    margin: 25px 0 10px;
+}
+
+/* LISTAS */
+
+main ul {
+    margin: 15px 0 25px 35px;
+}
+
+main li {
+    margin-bottom: 8px;
+}
+
+.contenido-articulo ul {
+    margin: 15px 0 25px 35px;
+}
+
+
+/* ==================================================
+   IMÁGENES DE LOS ARTÍCULOS
+================================================== */
+
+.imagen-articulo {
+    width: 100%;
+    max-width: 650px;
+    max-height: 380px;
+    object-fit: cover;
+    display: block;
+    margin: 25px auto;
+    border-radius: 12px;
+}
+
+
+/* ==================================================
+   NAVEGACIÓN ENTRE ARTÍCULOS
+================================================== */
+
+.navegacion-articulo {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 25px auto 40px;
+}
+
+
+/* ==================================================
+   PIE DE PÁGINA
+================================================== */
 
 footer {
     background-color: #b77965;
@@ -238,15 +361,48 @@ footer img {
 }
 
 
-/* DISEÑO RESPONSIVE */
+/* ==================================================
+   DISEÑO RESPONSIVE
+================================================== */
 
 @media (max-width: 700px) {
 
-    header h1 {
-        font-size: 34px;
+    /* CABECERA */
+
+    header {
+        padding: 15px 5%;
     }
 
+    .cabecera {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .titulo-blog {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .titulo-blog img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .texto-cabecera h1 {
+        font-size: 48px;
+    }
+
+    .texto-cabecera p {
+        font-size: 20px;
+    }
+
+    /* NAVEGACIÓN */
+
     nav {
+        justify-content: center;
+        margin-top: 10px;
         gap: 5px;
     }
 
@@ -256,9 +412,13 @@ footer img {
         font-size: 14px;
     }
 
+    /* CONTENIDO GENERAL */
+
     main {
         padding: 25px 15px;
     }
+
+    /* PRESENTACIÓN */
 
     .presentacion {
         padding: 45px 20px;
@@ -266,9 +426,17 @@ footer img {
 
     .presentacion h2 {
         font-size: 27px;
+        padding-left: 0;
     }
 
-    #tutoriales article {
+    .presentacion p {
+        font-size: 17px;
+        padding-left: 0;
+    }
+
+    /* PUBLICACIONES */
+
+    #publicaciones article {
         display: block;
         width: 100%;
         margin: 20px 0;
@@ -278,153 +446,19 @@ footer img {
         height: 210px;
     }
 
-    section {
-        margin-bottom: 35px;
-         text-align: center;   
-    }
+    /* INSPIRACIÓN Y SOBRE MÍ */
+
     .inspiracionEinfo {
-    flex-direction: column;
-    gap: 20px;
-}
-}
+        flex-direction: column;
+        gap: 20px;
+    }
 
+    #inspiracion,
+    #sobre-mi {
+        padding: 25px;
+    }
 
-
-/* IMAGENES DE LAS PUBLICACIONES */
-
-article img {
-    width: 100%;
-    height: 190px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-
-
-.botones:hover {
-    background-color: #805c49;
-}
-
-
-/* IMAGENES DE LOS ARTICULOS */
-
-.imagen-articulo {
-    width: 100%;
-    max-width: 750px;
-    max-height: 420px;
-    object-fit: cover;
-    display: block;
-    margin: 25px auto;
-    border-radius: 12px;
-}
-
-main ul {
-    margin: 15px 0 25px 35px;
-}
-
-main li {
-    margin-bottom: 8px;
-}
-
-main h3 {
-    color: #a2745c;
-    margin: 25px 0 10px;
-}
-
-
-/* DETALLES DE LAS SECCIONES */
-
-.inspiracionEinfo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 30px;
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
-}
-
-#inspiracion,
-#sobre-mi {
-    flex: 1;
-    min-width: 0;
-    margin: 0;
-    padding: 30px;
-    text-align: center;
-    background-color: #efe4d7;
-    border-radius: 12px;
-}
-
-
-
-
-/* CONTENIDO DE LOS ARTICULOS */
-
-.contenido-articulo {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 35px 50px;
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(80, 60, 40, 0.08);
-}
-
-/* TITULO DEL ARTICULO */
-
-.contenido-articulo h2 {
-    text-align: center;
-    color: #644032;
-    font-size: 32px;
-    margin-bottom: 25px;
-}
-
-/* TEXTO */
-
-.contenido-articulo p {
-    text-align: justify;
-    margin-bottom: 15px;
-    color: #514438;
-}
-
-/* SUBTITULOS */
-
-.contenido-articulo h3 {
-    color: #a2745c;
-    margin: 25px 0 10px;
-}
-
-/* LISTAS */
-
-.contenido-articulo ul {
-    margin: 15px 0 25px 35px;
-}
-
-/* IMAGEN */
-
-.imagen-articulo {
-    width: 100%;
-    max-width: 650px;
-    max-height: 380px;
-    object-fit: cover;
-    display: block;
-    margin: 25px auto;
-    border-radius: 12px;
-}
-
-/* BOTONERA */
-
-.navegacion-articulo {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin: 25px auto 40px;
-}
-
-/* RESPONSIVE */
-
-@media (max-width: 700px) {
+    /* ARTÍCULOS */
 
     .contenido-articulo {
         margin: 20px 15px;
@@ -439,4 +473,11 @@ main h3 {
         max-height: 280px;
     }
 
+    /* NAVEGACIÓN ENTRE ARTÍCULOS */
+
+    .navegacion-articulo {
+        flex-wrap: wrap;
+    }
+
 }
+```
